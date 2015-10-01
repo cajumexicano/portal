@@ -1995,6 +1995,9 @@ hr{
 	
 	.btn-group .btn{
 		padding:7px 30px;
+		float:none;
+		margin:2px 0;
+		border-radius: 0 !important;
 	}
 
 	#filter-works{
