@@ -25,6 +25,7 @@
 .font-mexicano{
 	font-family: "Tempus Sans ITC";
 	font-weight: 900;
+	text-transform: uppercase;
 }
 
 .caju-logo{
@@ -33,7 +34,7 @@
 .caju-logo span{
 	display: block;
 	letter-spacing: 0;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
 .caju-logo div{
