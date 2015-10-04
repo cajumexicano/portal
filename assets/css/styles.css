@@ -1826,6 +1826,13 @@ hr{
 		width:760px;
 		margin-left:-380px;
 	}
+	
+	.btn-group .btn{
+		padding:7px 30px;
+		float:none;
+		margin:2px 0;
+		border-radius: 0 !important;
+	}
 
 	.service-item .service-icon{
 		width:150px;
@@ -1992,13 +1999,6 @@ hr{
 	
 	.btn-group{
 		margin-bottom: 40px;
-	}
-	
-	.btn-group .btn{
-		padding:7px 30px;
-		float:none;
-		margin:2px 0;
-		border-radius: 0 !important;
 	}
 
 	#filter-works{
