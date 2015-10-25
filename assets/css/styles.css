@@ -20,12 +20,13 @@
 
 .font-caju{
 	font-family: Ravie;
+	text-transform: lowercase !important;
 }
 
 .font-mexicano{
 	font-family: "Tempus Sans ITC";
 	font-weight: 900;
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 
 .caju-logo{
@@ -34,7 +35,6 @@
 .caju-logo span{
 	display: block;
 	letter-spacing: 0;
-	text-transform: uppercase;
 }
 
 .caju-logo div{
