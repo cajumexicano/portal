@@ -20,7 +20,7 @@
 
 .font-caju{
 	font-family: Ravie;
-	text-transform: lowercase !important;
+	text-transform: capitalize !important;
 }
 
 .font-mexicano{
