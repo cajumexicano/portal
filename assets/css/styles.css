@@ -96,6 +96,22 @@ a:focus{
 	text-decoration: none;
 }
 
+b {
+	font-weight: normal;
+}
+
+.b {
+	font-weight: bold;
+}
+
+u {
+	text-decoration: none;
+}
+
+.u {
+	text-decoration: underline;
+}
+
 .lead{
 	margin-bottom: 30px;
 	font-size: 28px;
@@ -457,19 +473,31 @@ hr{
 }
 
 
-#home h1{
+#home .title-header .font-caju{
 	margin:0;
 	font-size: 68px;
 	font-weight: 400;
 	margin-bottom: -0.05em;
 	margin-top: -6px;
+	display: block;
 }
 
-#home h2{
+#home .title-header .font-mexicano{
 	margin:0;
 	margin-bottom: 1em;
 	font-size: 39px;
 	font-weight: 400;
+	display: block;
+}
+
+#home .title-header .font-comida-mexicana{
+	margin:0;
+	margin-bottom: 1em;
+	font-size: 39px;
+	font-weight: 400;
+	color: transparent !important;
+	text-shadow: none !important;
+	display: block;
 }
 
 #home .header-img{
@@ -590,7 +618,7 @@ hr{
     max-width: 250px;
 }
 
-.service-item h3{
+.service-item h1, .service-item h3, .service-item h4, .service-item h5, .service-item h6{
 	font-size: 21px;
 	font-weight: 400;
 	color:#39444C;
@@ -684,15 +712,23 @@ hr{
 	color:#79848C;
 }
 
-#sobre .profile h2{
+
+
+.title-about .font-caju{
 	font-size: 46px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	display: block;
 }
 
-#sobre .profile h3{
+.title-about .font-mexicano{
 	margin:0;
 	font-size: 26px;
+	display: block;
+}
+
+.missao, .visao{
+	font-size: 24px;
 }
 
 .hover-wrapper{
@@ -973,7 +1009,7 @@ hr{
 	z-index: -1;
 }
 
-.hover-title h2{
+.hover-title h1, .hover-title h2, .hover-title h3, .hover-title h4, .hover-title h5, .hover-title h6{
 	position: absolute;
 	width:100%;
 	bottom:50%;
