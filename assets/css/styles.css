@@ -2018,7 +2018,7 @@ hr{
 	}
 	
 	.icon-bar{
-		background: #39444C;
+		background: #F4D1AE;
 	}
 	
 	#main-nav .container, #main-nav.scrolled .container{
@@ -2076,15 +2076,22 @@ hr{
 		float: none;
 		margin: 0 auto;
 	}
-	
-	#home h1{
-		font-size: 42px;
-		text-align: center;
-	}
 
-	#home h2{
-		font-size: 21px;
-		text-align: center;
+	.col-fixed {
+		width: 250px;
+	}
+	
+	#home .title-header {
+		margin-top: 30px;
+	}
+	
+	#home .title-header .font-caju {
+		font-size: 100px
+	}
+	
+	#home .title-header .font-mexicano {
+		margin-top: -20px;
+		font-size: 58px
 	}
 	
 	#home .header-img{
