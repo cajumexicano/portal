@@ -3,30 +3,41 @@
 ---------------------*/
 
 @font-face {
-	font-family: "Ravie";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Ravie"), url("./../fonts/ravie.woff") format("woff");
-	src: local("Ravie"), url("./../fonts/ravie.ttf") format("truetype");
+    font-family: 'Curely';
+    src: url('./../fonts/curely.eot');
+    src: url('./../fonts/curely.eot?#iefix') format('embedded-opentype'),
+         url('./../fonts/curely.woff2') format('woff2'),
+         url('./../fonts/curely.woff') format('woff'),
+         url('./../fonts/curely.ttf') format('truetype'),
+         url('./../fonts/curely.svg#curelyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: "Tempus Sans ITC";
-	font-style: normal;
-	font-weight: 400;
-	src: local("Tempus Sans ITC"), url("./../fonts/tempsitc.woff") format("woff");
-	src: local("Tempus Sans ITC"), url("./../fonts/tempsitc.ttf") format("truetype");
+    font-family: 'Brusher';
+    src: url('./../fonts/brusher.eot');
+    src: url('./../fonts/brusher.eot?#iefix') format('embedded-opentype'),
+         url('./../fonts/brusher.woff2') format('woff2'),
+         url('./../fonts/brusher.woff') format('woff'),
+         url('./../fonts/brusher.ttf') format('truetype'),
+         url('./../fonts/brusher.svg#brusherregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .font-caju{
-	font-family: Ravie;
+	font-family: Brusher;
 	text-transform: capitalize !important;
+	color: #F4D1AE;
 }
 
 .font-mexicano{
-	font-family: "Tempus Sans ITC";
+	font-family: Curely;
 	font-weight: 900;
 	text-transform: uppercase !important;
+	color: #FBBA00;
 }
 
 .caju-logo{
@@ -39,6 +50,10 @@
 
 .caju-logo div{
 	padding-top: 4px;
+}
+
+.caju-logo img{
+	margin-right: 8px;
 }
 
 .caju-logo .font-caju{
@@ -162,8 +177,8 @@ u {
 
 .push-down{
 	margin-top:120px;
-}
 
+}
 .img-center{
 	margin: 0 auto;
 }
@@ -184,6 +199,28 @@ hr{
 	box-shadow:none;
 	background:transparent;
 }
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.col-fixed {
+    /* custom width */
+    width:325px;
+}
+
+
+
 /*------------------
 ------ Colors ------
 --------------------*/
@@ -221,6 +258,15 @@ hr{
 .shadow-white{
 	text-shadow: 0px 0px 2px white;
 }
+
+.shadow-black{
+	text-shadow: 0px 0px 1px black,  1px 1px 1px black;
+}
+
+.shadow-black-big{
+	text-shadow: 0px 0px 1px black,  1px 1px 1px black, 4px 4px 4px black;
+}
+
 
 
 /*---------------
@@ -352,20 +398,26 @@ hr{
 }
 
 #main-nav .container{
-	padding-top:25px;
-	padding-bottom:25px;
+	padding-top:24px;
+	padding-bottom:10px;
 	-webkit-transition: padding .3s ease-out;
 	transition: padding .3s ease-out;
 }
 
 #main-nav.scrolled .container{
-	padding-top:12px;
-	padding-bottom:12px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 #main-nav.scrolled{
-	background: #fff;
-	border-bottom:1px solid #b9c4cC;
+	/*background: #7B2117;
+	border-bottom:1px solid #C17248;*/
+	background: url('../images/header-bg.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-size: cover;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 .navbar > .container .navbar-brand{
@@ -384,7 +436,7 @@ hr{
 	margin-top:-5px;
 	font-family: fontAwesome;
 	content:"\f062";
-	color:#d9e4eC !important;
+	color:#f4d1ae !important;
 	opacity: 0;
 	-webkit-transform: translateY(10px);
 	transform: translateY(10px);
@@ -403,12 +455,12 @@ hr{
 	min-width:120px;
 	font-size: 16px;
 	font-weight: 6400;
-	color:#6D7A83;
+	color:#f4d1ae;
 	text-align: center;
 	background: none;
 	-webkit-transition: color .2s ease-out, padding .3s ease-out;
 	transition: color .2s ease-out, padding .3s ease-out; 
-	text-shadow: 0 0 2px #fff;
+	text-shadow: 0 0 1px black, 1px 1px 1px black;
 }
 
 #site-nav .active a,
@@ -416,7 +468,7 @@ hr{
 #site-nav a:focus{
 	padding-top: 4px;
 	padding-bottom:10px;
-	color:#62302F !important;
+	color:#fbba00 !important;
 	background: none;
 }
 #site-nav a .fa{
@@ -464,42 +516,46 @@ hr{
 }
 
 #home .col{
-	padding-right: 4px;
-	padding-left: 4px;
 }
 
 #home .logo-header{
-	float: right;
+}
+
+#home .title-header{
+	margin-top:60px;
 }
 
 
 #home .title-header .font-caju{
 	margin:0;
-	font-size: 68px;
+	font-size: 130px;
 	font-weight: 400;
 	margin-bottom: -0.05em;
 	margin-top: -6px;
 	display: block;
+	text-align: center;
 }
 
 #home .title-header .font-mexicano{
-	margin:0;
+	margin-top:-26px;
 	margin-bottom: 1em;
-	font-size: 39px;
+	font-size: 74px;
 	font-weight: 400;
 	display: block;
+	text-align: center;
 }
 
 #home .title-header .font-comida-mexicana{
 	margin:0;
 	margin-bottom: 1em;
-	font-size: 39px;
+	font-size: 20px;
 	font-weight: 400;
 	color: transparent !important;
 	text-shadow: none !important;
 	display: block;
 }
 
+/* NOT USED */
 #home .header-img{
 	position: absolute;
 	bottom: 0;
@@ -507,6 +563,7 @@ hr{
 	width:900px;
 	margin-left:-450px;
 	z-index: -1;
+	display: none;
 }
 
 .scroll-down{
@@ -715,7 +772,7 @@ hr{
 
 
 .title-about .font-caju{
-	font-size: 46px;
+	font-size: 70px;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	display: block;
@@ -723,8 +780,9 @@ hr{
 
 .title-about .font-mexicano{
 	margin:0;
-	font-size: 26px;
+	font-size: 38px;
 	display: block;
+	margin-top: -12px;
 }
 
 .missao, .visao{
@@ -1565,7 +1623,7 @@ hr{
 }
 
 #main-footer a:hover{
-	color:#62302F;
+	color:#FBBA00;
 }
 
 #main-footer .footer-nav{
