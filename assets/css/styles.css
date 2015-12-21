@@ -2027,7 +2027,10 @@ hr{
 	}
 
 	#main-nav, #main-nav.scrolled{
-		background: #fff;
+		background: url('../images/header-bg.jpg') no-repeat;
+		background-attachment: fixed;
+		background-size: 100%;
+		background-size: cover;
 		border-bottom:1px solid #b9c4cC;
 	}
 	
@@ -2048,7 +2051,7 @@ hr{
 	#site-nav a:hover,
 	#site-nav a:focus{
 		padding:10px 30px;
-		color:#62302F !important;
+		color:#FBBA00 !important;
 		background: none;
 	}
 	
