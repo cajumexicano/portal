@@ -2031,7 +2031,7 @@ hr{
 		background-attachment: fixed;
 		background-size: 100%;
 		background-size: cover;
-		border-bottom:1px solid #b9c4cC;
+		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
 	}
 	
 	.navbar > .container .navbar-brand{
